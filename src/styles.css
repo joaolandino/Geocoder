@@ -33,12 +33,37 @@ textarea{
 :-ms-input-placeholder{ font-size: 24px; font-weight: 300; color: rgba(0, 0, 0, .3); }
 :-moz-placeholder{ font-size: 24px; font-weight: 300; color: rgba(0, 0, 0, .3); }
 
+
+.box-component{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.box-component form{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-component textarea{
+  border: none;
+  background: none;
+  flex-grow: 1;
+  padding: 5px 15px 5px 5px;
+  box-sizing: border-box;
+  margin: 15px 0;
+
+  line-height: 180%;
+}
+
 .btn{
   border-radius: 5px;
   padding: 15px;
   border: none;
-  background: #20b282;
+  background: #3887BE;
   cursor: pointer;
 
   color: #fff;
+  font-size: 18px;
 }

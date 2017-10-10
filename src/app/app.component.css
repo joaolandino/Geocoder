@@ -22,5 +22,6 @@
   padding: 10px;
   float: right;
   font-style: italic;
-  color: blue;
+  color: rgba(0, 0, 0, .3);
+  text-decoration: none;
 }
