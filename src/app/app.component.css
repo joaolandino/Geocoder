@@ -1,0 +1,26 @@
+#app{
+  width: 100vw;
+  max-width: 1500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+#app > div{
+  width: 100vw;
+  max-width: 500px;
+  height: 100vh;
+  max-height: calc(100vh - 400px);
+  margin: 15px;
+}
+
+#app-developer{
+  padding: 10px;
+  float: right;
+  font-style: italic;
+  color: blue;
+}
