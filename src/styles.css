@@ -7,32 +7,23 @@
   font-weight: normal;
 }
 
-html, body{
-  height: 100%;
-}
+html, body{ height: 100%; }
 
-body{
-  min-height: 100%;
-}
+body{ min-height: 100%; }
 
-p, a{
-  font-size: 14px;
-}
+p, a{ font-size: 14px; }
 
 h2{
   font-size: 48px;
   color: #212121;
 }
 
-textarea{
-  resize: none;
-}
+textarea{ resize: none; }
 
 ::-webkit-input-placeholder{ font-size: 24px; font-weight: 300; color: rgba(0, 0, 0, .3); }
 ::-moz-placeholder{ font-size: 24px; font-weight: 300; color: rgba(0, 0, 0, .3); }
 :-ms-input-placeholder{ font-size: 24px; font-weight: 300; color: rgba(0, 0, 0, .3); }
 :-moz-placeholder{ font-size: 24px; font-weight: 300; color: rgba(0, 0, 0, .3); }
-
 
 .box-component{
   display: flex;

@@ -1,9 +1,9 @@
 
 
 <div class="box-component">
-  <h2>Input</h2>
-  <form>
-    <textarea placeholder="Input adresses here"></textarea>
+  <h2>{{title}}</h2>
+  <form (ngSubmit)="inputSubmit(f)" #f="ngForm">
+    <textarea placeholder="...adresses here" name="adresses" [ngModel]="adresses"></textarea>
     <input type="submit" value="Go!" class="btn" />
   </form>
 </div>

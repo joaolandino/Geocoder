@@ -5,7 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './output.component.html',
   styleUrls: ['./output.component.css']
 })
+
 export class OutputComponent implements OnInit {
+
+  title: string = "Output";
 
   constructor() { }
 

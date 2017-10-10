@@ -1,5 +1,5 @@
 #app{
-  width: 100vw;
+  width: 100%;
   max-width: 1500px;
   height: 100vh;
   display: flex;
@@ -12,10 +12,14 @@
 
 #app > div{
   width: 100vw;
-  max-width: 500px;
+  max-width: 550px;
   height: 100vh;
   max-height: calc(100vh - 400px);
   margin: 15px;
+}
+
+@media(max-height: 700px){
+  #app > div{ max-height: calc(100vh - 100px); }
 }
 
 #app-developer{
