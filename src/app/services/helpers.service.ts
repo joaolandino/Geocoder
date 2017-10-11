@@ -19,6 +19,6 @@ export class HelpersService {
     } catch (err) {
         return null;
     }
-}
+  }
 
 }

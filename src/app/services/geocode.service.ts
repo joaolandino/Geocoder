@@ -16,7 +16,7 @@ export class GeocodeService {
   ) { }
 
   geocode(_address: string = null){
-    let response = Observable.of();
+    let response = Observable.of({ 'result': '', 'address': '', 'lat': '', 'lng': '' });
 
     for(let i = 0; i < ServicesList.length; i++){
 
@@ -34,6 +34,7 @@ export class GeocodeService {
                   .map(
                     _response => {
                       return {
+                        'result': 'success',
                         'address': this._helpers.stringToObjectPath(_response.json(), ServicesList[i].returnTree.address),
                         'lat': this._helpers.stringToObjectPath(_response.json(), ServicesList[i].returnTree.lat),
                         'lng': this._helpers.stringToObjectPath(_response.json(), ServicesList[i].returnTree.lng)

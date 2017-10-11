@@ -5,6 +5,7 @@
 
   <div class="main-content">
     <div class="texts">
+      <span class="placeholder" *ngIf="adresses.length == 0">...will appear here</span>
       <p *ngFor="let address of adresses">
         {{  address.lat }}, {{  address.lng }}
       </p>

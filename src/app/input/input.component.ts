@@ -27,13 +27,28 @@ export class InputComponent{
 
   geocode(_adresses: string[]){
 
+    let _this = this;
+
     _adresses.map(
-      _address => {
-        this._geocodeService.geocode(_address).subscribe(
-          _data => {
-            this.geocoded.emit({adresses: _data});
-          }
-        )
+      (_address, i) => {
+
+        // Delay before next request
+        setTimeout(function(x){
+          return function(){
+
+            _this._geocodeService.geocode(_address).subscribe(
+              _data => {
+                if(_data.result == ''){
+                  console.log("Limit!");
+                }else{
+                  _this.geocoded.emit({adresses: _data});
+                }
+              }
+            )
+
+          };
+        }(i), 1500 * i);
+
       }
     );
 
