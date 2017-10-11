@@ -24,6 +24,7 @@ export class GeocodeService {
       if( ServicesList[i].requests < ServicesList[i].maxPerDay ){
         ServicesList[i].requests++;
 
+        // Create URL
         let url = ServicesList[i].url
                   .replace('{KEY}', ServicesList[i].key)
                   .replace('{ADDRESS}', _address);

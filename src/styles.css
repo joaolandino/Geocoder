@@ -11,7 +11,10 @@ html, body{ height: 100%; }
 
 body{ min-height: 100%; }
 
-p, a{ font-size: 14px; }
+p, a{
+  font-size: 14px;
+  line-height: 180%;
+}
 
 h2{
   font-size: 48px;
@@ -31,13 +34,13 @@ textarea{ resize: none; }
   height: 100%;
 }
 
-.box-component form{
+.box-component .main-content{
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-.box-component textarea{
+.box-component .main-content .texts{
   border: none;
   background: none;
   flex-grow: 1;
@@ -46,6 +49,7 @@ textarea{ resize: none; }
   margin: 15px 0;
 
   line-height: 180%;
+  overflow: auto;
 }
 
 .btn{

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  adresses: string[] = [];
+
+  geocoded(event){
+    this.adresses.push(event.adresses);
+  }
 }

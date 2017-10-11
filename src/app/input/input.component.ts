@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 import { GeocodeService } from '../services/geocode.service';
 
@@ -11,7 +11,7 @@ import { GeocodeService } from '../services/geocode.service';
 export class InputComponent{
 
   title: string = "Input";
-  adresses: string[];
+  @Output() geocoded = new EventEmitter();
 
   constructor(
     private _geocodeService: GeocodeService
@@ -30,7 +30,7 @@ export class InputComponent{
       _address => {
         this._geocodeService.geocode(_address).subscribe(
           _data => {
-            console.log(_data);
+            this.geocoded.emit({adresses: _data});
           }
         )
       }

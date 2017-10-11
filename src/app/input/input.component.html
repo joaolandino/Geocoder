@@ -2,8 +2,10 @@
 
 <div class="box-component">
   <h2>{{title}}</h2>
-  <form (ngSubmit)="inputSubmit(f)" #f="ngForm">
-    <textarea placeholder="...adresses here" name="adresses" [ngModel]="adresses"></textarea>
+
+  <form class="main-content" (ngSubmit)="inputSubmit(f)" #f="ngForm">
+    <textarea placeholder="...adresses here" name="adresses" [ngModel]="adresses" class="texts"></textarea>
     <input type="submit" value="Go!" class="btn" />
   </form>
+
 </div>

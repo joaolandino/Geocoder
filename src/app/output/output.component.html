@@ -2,7 +2,13 @@
 
 <div class="box-component">
   <h2>{{title}}</h2>
-  <form>
-    <textarea placeholder="...will appear here" readonly></textarea>
-  </form>
+
+  <div class="main-content">
+    <div class="texts">
+      <p *ngFor="let address of adresses">
+        {{  address.lat }}, {{  address.lng }}
+      </p>
+    </div>
+  </div>
+
 </div>

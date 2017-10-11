@@ -2,10 +2,10 @@
 
 <section id="app">
   <div>
-    <app-input></app-input>
+    <app-input (geocoded)="geocoded($event)"></app-input>
   </div>
   <div>
-    <app-output></app-output>
+    <app-output [adresses]="adresses"></app-output>
   </div>
 </section>
 
