@@ -11,6 +11,7 @@ import { GeocodeService } from '../services/geocode.service';
 export class InputComponent{
 
   title: string = "Input";
+  adresses: string[] = [];
   @Output() geocoded = new EventEmitter();
 
   constructor(
